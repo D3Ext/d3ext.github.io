@@ -26,10 +26,10 @@ title: D3Ext                          # the main title
 tagline: Pentesting and programming   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  A minimal, responsive, and powerful Jekyll theme for presenting professional writing.
+  My own blog dedicated to pentesting and more.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: 'https://d3ext2.github.io'
+url: 'https://d3ext.github.io'
 
 github:
   username: D3Ext             # change to your github username
@@ -80,7 +80,7 @@ theme_mode:   # [light|dark]
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-img_cdn:
+img_cdn: https://avatars.githubusercontent.com/u/67125397?v=4
 
 # the avatar on sidebar, support local or CORS resources
 avatar: https://avatars.githubusercontent.com/u/67125397?v=4
