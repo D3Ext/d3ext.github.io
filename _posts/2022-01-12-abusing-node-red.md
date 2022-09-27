@@ -1,5 +1,6 @@
 ---
 layout: post
+categories: [Abusing CMSs]
 ---
 
 <img src="../images/index.png">
