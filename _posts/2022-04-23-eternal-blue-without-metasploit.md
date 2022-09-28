@@ -1,8 +1,10 @@
 ---
 layout: post
+categories: [Windows]
+tags: [eJPT]
 ---
 
-<img src="../images/Windows_icon_logo.png" height=120 width=140>
+<img src="https://raw.githubusercontent.com/D3Ext/d3ext.github.io/main/images/Windows_icon_logo.png" height=120 width=140>
 
 In this post, you're going to learn how to exploit the dangerous and famous **EternalBlue** vulnerability (*MS17-010*), which occurs in the SMB service of the Windows 7.
 
@@ -31,7 +33,7 @@ If it gives some names with **"Ok"** (samr, lsarpc, netlogon, browser...), it me
 
 Now it's time to modify a little bit the **zzz_exploit.py** to make it works. Edit the script, filter for **'cmd'**, comment some lines, and put your command in the cmd line like this:
 
-<img src="../images/eternalblue.png">
+<img src="https://raw.githubusercontent.com/D3Ext/d3ext.github.io/main/images/eternalblue.png">
 
 As you see you need to start the smb server:
 
@@ -59,7 +61,7 @@ python zzz_exploit.py 10.10.10.40 samr
 
 And you'll receive a reverse shell in the victim machine as "nt authority\\system" with full privileges.
 
-<img src="../images/eternalblueshell.png">
+<img src="https://raw.githubusercontent.com/D3Ext/d3ext.github.io/main/images/eternalblueshell.png">
 
 This vulnerability is really common in CTFs and certifications like the eJPT
 That's all.
