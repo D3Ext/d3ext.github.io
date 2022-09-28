@@ -3,7 +3,7 @@ layout: post
 categories: [Abusing CMSs]
 ---
 
-- CTF: **"Enterprise"** on HackTheBox
+- CTF: **"Enterprise"** on HackTheBox.
 
 - This post is the third part of the list **"Abusing CMS"**.
 
