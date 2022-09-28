@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [Abusing CMSs]
+tags: [hackthebox]
 ---
 
 - CTF: **"Enterprise"** on HackTheBox
