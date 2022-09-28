@@ -1,6 +1,7 @@
 ---
 layout: post
 categories: [Abusing CMSs]
+tags: [hackthebox, pentesting]
 ---
 
 <img src="../images/joomla-removebg-preview.png" height="130" width="180">
