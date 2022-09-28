@@ -3,7 +3,7 @@ layout: post
 categories: [Abusing CMSs]
 ---
 
-<img src="../images/index.png">
+<img src="https://raw.githubusercontent.com/D3Ext/d3ext.github.io/main/images/index.png">
 
 ## Como conseguir RCE en un Node-Red
 
@@ -16,11 +16,11 @@ Para esta ocasion voy a explotar el Node Red de la maquina ***Reddish*** de Hack
 
 Lo primero, es tener acceso al panel principal para conectar nodos, por lo que tienes que haber iniciado sesion o conseguir burlar el panel de inicio de sesion o alguna otra cosa.
 
-<img src="../images/panel.png">
+<img src="https://raw.githubusercontent.com/D3Ext/d3ext.github.io/main/images/panel.png">
 
 Despues hay que buscar en el apartado **"input"** el nodo **"tcp"**, luego busca **"exec"** y tambien en **"output"** otro nodo de **"tcp"** de forma que si los conectamos en linea quedaria asi:
 
-<img src="../images/line.png">
+<img src="https://raw.githubusercontent.com/D3Ext/d3ext.github.io/main/images/line.png">
 
 Luego en el nodo **"tcp"** de la izquierda, cambias el tipo a "connect to" pon tu ip de atacante, y el puerto para recibir la conexión.
 Y en el nodo **"tcp"** de la derecha cambias el tipo a "reply to TCP"
@@ -29,7 +29,7 @@ Con todo configurado le das al boton de **"deploy"** arriba a la derecha para to
 
 Y si todo esta bien deberias recibir una shell en la maquina que corre el Node Red:
 
-<img src="../images/shell.png">
+<img src="https://raw.githubusercontent.com/D3Ext/d3ext.github.io/main/images/shell.png">
 
 Ya solo faltaria hacer un tratamiento de la **tty** para tener una shell totalmente interactiva que permita hacer Ctrl+C o Ctrl+L y mas cosas.
 Que por si no sabes como se hace te dejo un enlace para que veas como es: 
