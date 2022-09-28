@@ -1,4 +1,3 @@
-# Import the theme
 theme: jekyll-theme-chirpy
 
 # Change the following value to '/PROJECT_NAME' ONLY IF your site type is GitHub Pages Project sites and doesn't have a custom domain.
@@ -23,7 +22,7 @@ title: D3Ext                          # the main title
 tagline: Pentesting and programming   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  My own blog dedicated to pentesting and more.
+  My own blog.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: 'https://d3ext.github.io'
