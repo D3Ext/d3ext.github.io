@@ -69,6 +69,3 @@ bash setup.sh 2>/dev/null
 cd ..
 
 echo -e "${blueColour}\nInstalacion terminada :D${endColour}"
-
-
-
