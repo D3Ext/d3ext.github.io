@@ -49,13 +49,13 @@ sleep 0.3
 echo -e "${blueColour}\nClonando drivers, visita la documentacion oficial para terminar de instalarlos en caso de que tu antena no sea reconocida${endColour}"
 sleep 0.3
 
-git clone https://github.com/aircrack-ng/rtl8188eus 2>/dev/null
-git clone https://github.com/aircrack-ng/rtl8812au 2>/dev/null
+git clone https://github.com/aircrack-ng/rtl8188eus
+git clone https://github.com/aircrack-ng/rtl8812au
 
 echo -e "${blueColour}\nInstalando qspectrumanalyzer${endColour}"
 
 sleep 0.3
-git clone https://github.com/xmikos/qspectrumanalyzer.git 2>/dev/null
+git clone https://github.com/xmikos/qspectrumanalyzer.git
 cd qspectrumanalyzer 2>/dev/null
 pip3 install --user . 2>/dev/null
 sleep 0.3
@@ -63,7 +63,7 @@ sleep 0.3
 echo -e "${blueColour}\nDescargando WEF${endColour}"
 sleep 0.3
 
-git clone https://github.com/D3Ext/WEF 2>/dev/null
+git clone https://github.com/D3Ext/WEF
 cd WEF 2>/dev/null
 bash setup.sh 2>/dev/null
 cd ..
