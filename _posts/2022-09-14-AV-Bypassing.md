@@ -1,3 +1,9 @@
+---
+layout: post
+title: AV Bypassing
+categories: [windows]
+---
+
 ## Introduction
 
 Hi there! In this posts I'm going to explain how we can bypass common AVs (antivirus) in different ways to help you during **Red Team Operations** and more. I recommend you to have a good base about powershell to understand basic syntax.
@@ -39,31 +45,31 @@ whoami
 ```
 
 - Replace potentials AV triggers
-```powershell
+```
 IEX --> ("{1}{0}" -f 'EX','I')
 New-Object --> (`G`C`M *w-O*)
 Get-Command --> G`C`M
 ```
 
 - Adding semi-random backticks (don't use them on lowercase characters)
-```powershell
+```
 Invoke-Expression --> `In`Vo`Ke-`Ex`Pr`Es`Si`On
 New-Object --> `Ne`W-`Ob`Je`Ct
 ```
 
 - Change variables names to random ones (don't change $true, $false, $null...)
-```powershell
+```
 $client --> $rjsaeuijaduargauyd
 $output --> $dkamkuixfkxyosfi
 ```
 
 - Define variables and sum them
-```powershell
+```
 whoami --> $var1="wh";$var2="oa";$var3="mi"; &("$var1$var2$var3")
 ```
 
 - Delete/replace pentesting words
-```powershell
+```
 Nishang
 Hack
 PowerView
@@ -76,7 +82,7 @@ Backdoor
 - Remove all blank lines and comment lines
 
 - Try to change IP format to decimal
-```powershell
+```
 192.168.1.1 --> 3232235777
 ```
 
@@ -92,7 +98,6 @@ Backdoor
 > Using hexadecimal data (example with "whoami")
 ```powershell
 &("{1}{0}"-f"eX","I")(("77 68 6F 61 6D 69" -sPlIt ' ' |FoReAcH-ObJeCt {[char][byte]"0x$_"}) -jOiN '')
-
 ```
 
 ### AMSI Bypass
