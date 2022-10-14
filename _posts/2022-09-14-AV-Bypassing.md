@@ -6,7 +6,7 @@ categories: [Windows, Powershell]
 
 ## Introduction
 
-Hi there! In this posts I'm going to explain how we can bypass common AVs (antivirus) in different ways to help you during **Red Team Operations** and more. I recommend you to have a good base about powershell to understand basic syntax.
+Hi there! In this post I'm going to explain how we can bypass common AVs (antivirus) in different ways to help you during **Red Team Operations** and more. I recommend you to have a good base about powershell to understand basic syntax.
 
 - Why I started researching on AV bypassing?
 
