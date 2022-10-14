@@ -39,7 +39,7 @@ whoami
 ```
 
 - Downcase and upcase some characters
-```powershell
+```
 (Get-Location).Path
 (GeT-loCAtIoN).pAtH
 ```
