@@ -64,4 +64,5 @@ And you'll receive a reverse shell in the victim machine as "nt authority\\syste
 <img src="https://raw.githubusercontent.com/D3Ext/d3ext.github.io/main/images/eternalblueshell.png">
 
 This vulnerability is really common in CTFs and certifications like the eJPT
+
 That's all.
