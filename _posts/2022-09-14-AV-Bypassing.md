@@ -164,11 +164,12 @@ If we execute that once we have bypassed/deactivated the AMSI, it won't be flagg
 
 This video shows you how I was able to load and execute in memory **PowerUp.ps1** from **PowerShell Mafia** in a Windows machine with the AV up to date.
 
-<video src="https://raw.githubusercontent.com/D3Ext/d3ext.github.io/main/images/bypassing-demo.mp4"></video>
+<video src="https://raw.githubusercontent.com/D3Ext/d3ext.github.io/main/images/bypassing-demo.mkv"></video>
 
 ## Tools
 
 [Invoke-Obfuscation](https://github.com/danielbohannon/Invoke-Obfuscation) by *Daniel Bohannon*
+
 [Chimera](https://github.com/tokyoneon/Chimera) by *TokyoNeon*
 
 ## Conclusion
