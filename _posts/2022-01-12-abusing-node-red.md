@@ -1,5 +1,6 @@
 ---
 layout: post
+author: D3Ext
 categories: [Abusing CMSs]
 ---
 

@@ -1,5 +1,6 @@
 ---
 layout: post
+author: D3Ext
 title: AV Bypassing - Powershell Obfuscation
 categories: [Windows, Powershell]
 ---
