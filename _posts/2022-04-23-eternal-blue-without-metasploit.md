@@ -1,6 +1,5 @@
 ---
 layout: post
-categories: [Windows]
 tags: [eJPT]
 ---
 
