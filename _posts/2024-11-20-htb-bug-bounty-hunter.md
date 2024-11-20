@@ -1,6 +1,6 @@
 ---
 layout: post
-title: HackTheBox Bug Bounty Hunter - Course Review
+title: Course Review - HackTheBox Bug Bounty Hunter
 ---
 
 <img src="https://raw.githubusercontent.com/D3Ext/d3ext.github.io/main/images/bug_bounty/course_finish.png" alt="htb_image">
